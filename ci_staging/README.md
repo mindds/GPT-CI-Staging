@@ -1,0 +1,1 @@
+This folder contains the complete pipeline for performing **cognitive impairment (CI) staging**—categorizing patients as **Normal**, **Mild Cognitive Impairment (MCI)**, or **Dementia**—using LLMs. The pipeline spans data preprocessing, model inference, performance evaluation and analyses.
