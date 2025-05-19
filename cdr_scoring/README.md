@@ -1,0 +1,1 @@
+This folder contains the full pipeline for conducting **Clinical Dementia Rating (CDR) scoring** using GPT-4o model. The workflow includes data preprocessing, GPT-based inference, and downstream analysis of results.
