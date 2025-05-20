@@ -2,7 +2,7 @@
 
 This repository provides code for our study on using GPT-4o to automate the extraction and interpretation of cognitive information from electronic health records (EHRs). The framework was evaluated across two key clinical tasks: **Cognitive Impairment (CI) stage classification** and **Clinical Dementia Rating (CDR) scoring**.
 
-## 🧠 Study Overview
+## Study Overview
 
 In this study, we introduce a **GPT-4o-powered framework** for automating cognitive assessment from unstructured clinical notes. Our evaluation used two real-world datasets:
 
