@@ -9,19 +9,24 @@ In this study, we introduce a **GPT-4o-powered framework** for automating cognit
 1. **CI Stage Classification**  
    We applied the framework to classify patients as **Cognitively Unimpaired (CU)**, **Mild Cognitive Impairment (MCI)**, or **Dementia** using a dataset of 1,002 Medicare fee-for-service patients from the **Mass General Brigham (MGB) Healthcare Accountable Care Organization (ACO)**.  
    GPT-4o’s performance was compared with several other frameworks to assess its language understanding capabilities and potential in clinical settings.
+   To benchmark GPT-4o’s performance and assess its potential in clinical settings, we compared it with three alternative deep learning frameworks:
+   1. *USE Framework*: Sentence-level keyword filtering, Universal Sentence Encoder (USE) embeddings, Recursive Feature Elimination (RFE), and XGBoost classifier.
+   2. *DementiaBERT Framework*: Sentence-level keyword filtering, DementiaBERT embeddings (fine-tuned on dementia-related clinical language), and XGBoost classifier.
+   3. *Hybrid Framework*: GPT-4o-generated summaries of chunked notes, followed by embedding via DementiaBERT and XGBoost classification.
 
-2. **CDR Scoring**  
+3. **CDR Scoring**  
    We further evaluated GPT-4o on the task of assigning **global Clinical Dementia Rating (CDR)** scores using specialist notes from patients who visited the MGB memory clinic.
 
 Beyond performance evaluation, we explored the design of an **interactive AI agent** that integrates the GPT-4o-powered framework to enable real-time interaction and decision support for cognitive diagnoses.
 
 ## Repository Structure
 
-- `ci_staging/`  
-  Contains the full pipeline for **CI stage classification**, including GPT inference, evaluation and comparison across different frameworks. 
+ci_staging/ # Contains the full pipeline for **CI stage classification**, including GPT inference, evaluation and comparison across different frameworks. 
+├── use_model/            # USE framework: keyword-filtered sentences + USE + RFE + XGBoost
+├── dementia_bert/        # DementiaBERT framework and Hybrid framework
 
-- `cdr_scoring/`  
-  Contains the pipeline for **CDR score assignment**, from preprocessing to prompting of GPT and downstream results analysis.
+cdr_scoring/
+    └──                   # Contains the pipeline for **CDR score assignment**, from preprocessing to prompting of GPT and downstream results analysis.
 
 
 ## ⚠️ Notes
@@ -33,7 +38,7 @@ Beyond performance evaluation, we explored the design of an **interactive AI age
 
 Please cite this repository if you use the codes or models in your research:
 ```bibtex
-[@article{leng2025gptci,
+@article{leng2025gptci,
   title     = {A GPT-4o-powered framework for identifying cognitive impairment stages in electronic health records},
   author    = {Leng, Yu and Magdamo, Colin G. and Sheu, Yi-han and Mohite, Prathamesh and Noori, Ayush and Ye, Elissa M. and Ge, Wendong and Sun, Haoqi and Brenner, Laura and Robbins, Gregory and Mukerji, Shibani and Zafar, Sahar and Benson, Nicole and Moura, Lidia and Hsu, John and Hyman, Bradley T. and Westover, Michael B. and Blacker, Deborah and Das, Sudeshna},
   journal   = {npj Digital Medicine},
@@ -45,4 +50,4 @@ Please cite this repository if you use the codes or models in your research:
   doi       = {10.1038/s41746-025-01834-5},
   pmid      = {40610683},
   pmcid     = {PMC12229571}
-}]
+}
