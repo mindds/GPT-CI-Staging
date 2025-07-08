@@ -21,12 +21,14 @@ Beyond performance evaluation, we explored the design of an **interactive AI age
 
 ## Repository Structure
 
-ci_staging/ # Contains the full pipeline for **CI stage classification**, including GPT inference, evaluation and comparison across different frameworks. 
-├── use_model/            # USE framework: keyword-filtered sentences + USE + RFE + XGBoost
-├── dementia_bert/        # DementiaBERT framework and Hybrid framework
-
-cdr_scoring/
-    └──                   # Contains the pipeline for **CDR score assignment**, from preprocessing to prompting of GPT and downstream results analysis.
+- `ci_staging/`  
+  Contains the full pipeline for **CI stage classification**, including GPT inference, evaluation and comparison across different frameworks.
+  
+   ├── `use_model/`            # USE framework: keyword-filtered sentences + USE + RFE + XGBoost
+   ├── `dementia_bert/`        # DementiaBERT framework and Hybrid framework
+  
+- `cdr_scoring/`  
+  Contains the pipeline for **CDR score assignment**, from preprocessing to prompting of GPT and downstream results analysis.
 
 
 ## ⚠️ Notes
