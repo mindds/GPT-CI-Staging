@@ -32,7 +32,8 @@ Beyond performance evaluation, we explored the design of an **interactive AI age
 ## Citation
 
 Please cite this repository if you use the codes or models in your research:
-@article{leng2025gptci,
+```bibtex
+[@article{leng2025gptci,
   title     = {A GPT-4o-powered framework for identifying cognitive impairment stages in electronic health records},
   author    = {Leng, Yu and Magdamo, Colin G. and Sheu, Yi-han and Mohite, Prathamesh and Noori, Ayush and Ye, Elissa M. and Ge, Wendong and Sun, Haoqi and Brenner, Laura and Robbins, Gregory and Mukerji, Shibani and Zafar, Sahar and Benson, Nicole and Moura, Lidia and Hsu, John and Hyman, Bradley T. and Westover, Michael B. and Blacker, Deborah and Das, Sudeshna},
   journal   = {npj Digital Medicine},
@@ -44,4 +45,4 @@ Please cite this repository if you use the codes or models in your research:
   doi       = {10.1038/s41746-025-01834-5},
   pmid      = {40610683},
   pmcid     = {PMC12229571}
-}
+}]
