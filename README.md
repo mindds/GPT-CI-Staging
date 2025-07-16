@@ -43,7 +43,7 @@ Please cite this repository if you use the codes or models in your research:
 ```bibtex
 @article{leng2025gptci,
   title     = {A GPT-4o-powered framework for identifying cognitive impairment stages in electronic health records},
-  author    = {Leng, Yu and Magdamo, Colin G. and Sheu, Yi-han and Mohite, Prathamesh and Noori, Ayush and Ye, Elissa M. and Ge, Wendong and Sun, Haoqi and Brenner, Laura and Robbins, Gregory and Mukerji, Shibani and Zafar, Sahar and Benson, Nicole and Moura, Lidia and Hsu, John and Hyman, Bradley T. and Westover, Michael B. and Blacker, Deborah and Das, Sudeshna},
+  author    = {Leng, Yu and He, Yingnan and Amini, Samad and Magdamo, Colin and Paschalidis, Ioannis and Mukerji, Shibani S. and Moura, Lidia M. V. R. and Westover, M. Brandon and Vranceanu, Ana-Maria and Ritchie, Christine S. and Blacker, Deborah and Dickson, John R. and Das, Sudeshna},
   journal   = {npj Digital Medicine},
   volume    = {8},
   number    = {1},
