@@ -2,6 +2,9 @@
 
 This repository provides code for our study on using GPT-4o to automate the extraction and interpretation of cognitive information from electronic health records (EHRs). The framework was evaluated across two key clinical tasks: **Cognitive Impairment (CI) stage classification** and **Clinical Dementia Rating (CDR) scoring**.
 
+
+Please find our paper "A GPT-4o-powered framework for identifying cognitive impairment stages in electronic health records" [here](https://www.nature.com/articles/s41746-025-01834-5).
+
 ## Study Overview
 
 In this study, we introduce a **GPT-4o-powered framework** for automating cognitive assessment from unstructured clinical notes. Our evaluation used two real-world datasets:
@@ -27,3 +30,20 @@ Beyond performance evaluation, we explored the design of an **interactive AI age
 ## ⚠️ Notes
 
 - No protected health information (PHI) is included in this repository. All code is shared for reproducibility and academic use.
+
+## Reference
+If you use this code or find our work helpful, please consider citing our paper:
+```
+@article{leng2025gpt_ci_staging,
+  title   = {A GPT-4o-powered framework for identifying cognitive impairment stages in electronic health records},
+  author  = {Leng, Yu and He, Yingnan and Amini, Samad and Magdamo, Colin and Paschalidis, Ioannis and Mukerji, Shibani S. and Moura, Lidia M. V. R. and Westover, M. Brandon and Vranceanu, Ana-Maria and Ritchie, Christine S. and Blacker, Deborah and Dickson, John R. and Das, Sudeshna},
+  journal = {npj Digital Medicine},
+  volume  = {8},
+  number  = {1},
+  pages   = {401},
+  year    = {2025},
+  publisher = {Nature Publishing Group},
+  doi     = {10.1038/s41746-025-01834-5},
+  url     = {https://www.nature.com/articles/s41746-025-01834-5}
+}
+```
